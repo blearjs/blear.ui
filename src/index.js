@@ -15,11 +15,11 @@ var zIndex = 9999;
 var UI = Events.extend({
     className: 'UI',
     constructor: function UI() {
-        this.Super();
+        UI.parent(this);
     },
 
     destroy: function () {
-        this.Super.destroy('destroy');
+        UI.parent.destroy(this);
     }
 });
 
