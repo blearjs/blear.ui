@@ -1,0 +1,68 @@
+$button-default-border: #ccc;
+$button-default-bg: #fff;
+$button-default-color: #888;
+$button-primary-border: #007aff;
+$button-primary-bg: #007aff;
+$button-primary-color: #007aff;
+$button-success-border: #4cd964;
+$button-success-bg: #4cd964;
+$button-success-color: #4cd964;
+$button-danger-border: #ff3b30;
+$button-danger-bg: #ff3b30;
+$button-danger-color: #ff3b30;
+
+.dkbtn {
+  border: 0;
+  width: 100%;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  border-radius: 0;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  height: 40px;
+  font-size: 14px;
+  // button 特殊
+  line-height: ((40px - 2px)/14px);
+  white-space: nowrap;
+  position: relative;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: inherit;
+  cursor: pointer;
+
+  &:active {
+    background: #f7f7f7;
+  }
+
+  &_default {
+    border-color: $button-default-border;
+    background: $button-default-bg;
+    color: $button-default-color;
+  }
+
+  &_primary {
+    //border-color: $button-primary-border;
+    //background: $button-primary-bg;
+    //color: $button-primary-color;
+    color: $button-primary-color;
+  }
+
+  &_success {
+    border-color: $button-success-border;
+    background: $button-success-bg;
+    color: $button-success-color;
+  }
+
+  &_danger {
+    border-color: $button-danger-border;
+    background: $button-danger-bg;
+    color: $button-danger-color;
+  }
+}

@@ -1,0 +1,40 @@
+.dkbtn {
+  border: 0;
+  width: 100%;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  border-radius: 0;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  height: 40px;
+  font-size: 14px;
+  line-height: 2.71429;
+  white-space: nowrap;
+  position: relative;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: inherit;
+  cursor: pointer; }
+  .dkbtn:active {
+    background: #f7f7f7; }
+  .dkbtn_default {
+    border-color: #ccc;
+    background: #fff;
+    color: #888; }
+  .dkbtn_primary {
+    color: #007aff; }
+  .dkbtn_success {
+    border-color: #4cd964;
+    background: #4cd964;
+    color: #4cd964; }
+  .dkbtn_danger {
+    border-color: #ff3b30;
+    background: #ff3b30;
+    color: #ff3b30; }

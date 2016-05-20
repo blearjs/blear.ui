@@ -1,0 +1,12 @@
+.dkipt {
+  border: 1px solid #ccc;
+  display: block;
+  width: 100%;
+  padding: 6px;
+  outline: 0;
+  -webkit-appearance: none;
+  background-color: transparent;
+  font-size: 14px; }
+
+.dkipt:focus {
+  border-color: #03A9F4; }
