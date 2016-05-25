@@ -31,10 +31,10 @@ UI.zIndex = function () {
     return zIndex++;
 };
 
-UI.BUTTON_CLASS = 'dkbtn';
-UI.TEXT_CLASS = 'dktext';
-UI.INPUT_CLASS = 'dkipt';
-UI.UI_CLASS = 'dkui';
+UI.BUTTON_CLASS = 'blearbtn';
+UI.TEXT_CLASS = 'bleartext';
+UI.INPUT_CLASS = 'bleaript';
+UI.UI_CLASS = 'blearui';
 require('./_style/base.css', 'css|style');
 require('./_style/input.css', 'css|style');
 require('./_style/button.css', 'css|style');

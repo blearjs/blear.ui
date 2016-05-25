@@ -1,4 +1,4 @@
-.dkbtn {
+.blearbtn {
   border: 0;
   width: 100%;
   text-decoration: none;
@@ -22,19 +22,19 @@
   text-overflow: ellipsis;
   font-family: inherit;
   cursor: pointer; }
-  .dkbtn:active {
+  .blearbtn:active {
     background: #f7f7f7; }
-  .dkbtn_default {
+  .blearbtn_default {
     border-color: #ccc;
     background: #fff;
     color: #888; }
-  .dkbtn_primary {
+  .blearbtn_primary {
     color: #007aff; }
-  .dkbtn_success {
+  .blearbtn_success {
     border-color: #4cd964;
     background: #4cd964;
     color: #4cd964; }
-  .dkbtn_danger {
+  .blearbtn_danger {
     border-color: #ff3b30;
     background: #ff3b30;
     color: #ff3b30; }
