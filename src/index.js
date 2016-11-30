@@ -19,7 +19,7 @@ var UI = Events.extend({
     },
 
     destroy: function () {
-        UI.parent.destroy(this);
+        UI.invoke('destroy', this);
     }
 });
 
