@@ -1,6 +1,6 @@
 {
   "name": "blear.ui",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "UI 基类",
   "scripts": {
     "live": "browser-sync start --config bs-config.js",
@@ -36,7 +36,7 @@
   },
   "dependencies": {
     "blear.classes.events": "1.x",
-    "blear.utils.object": "1.x"
+    "blear.utils.object": "^1.0.14"
   },
   "peerDependencies": {},
   "devDependencies": {
