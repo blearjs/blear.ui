@@ -39,6 +39,7 @@ describe('测试文件', function () {
             }
         };
 
+        expect(UI.getOptions(ui, 'options')).toBe(ui.options);
         expect(UI.getOptions(ui, 'options', 'a.b')).toBe(1);
         UI.setOptions(ui, 'options', 'a.b', 2);
         expect(UI.getOptions(ui, 'options', 'a.b')).toBe(2);
