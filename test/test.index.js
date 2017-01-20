@@ -30,7 +30,7 @@ describe('测试文件', function () {
         expect(zIndex1).toBeLessThan(zIndex2);
     });
 
-    it('.buildGetOption', function () {
+    it('.set/getOptions', function () {
         var ui = {
             options: {
                 a: {
@@ -39,28 +39,10 @@ describe('测试文件', function () {
             }
         };
 
-        var getOption = UI.buildGetOption(ui, 'options');
-
-        expect(getOption()).toBe(ui.options);
-        expect(getOption('a.b')).toBe(1);
-    });
-
-    it('.buildSetOption', function () {
-        var ui = {
-            options: {
-                a: {
-                    b: 1
-                }
-            }
-        };
-
-        var getOption = UI.buildGetOption(ui, 'options');
-        var setOption = UI.buildSetOption(ui, 'options');
-
-        expect(getOption('a.b')).toBe(1);
-        setOption('a.b', 2);
-        expect(getOption('a.b')).toBe(2);
-        setOption('a.b.c', 3);
-        expect(getOption('a.b.c')).toBe(3);
+        expect(UI.getOptions(ui, 'options', 'a.b')).toBe(1);
+        UI.setOptions(ui, 'options', 'a.b', 2);
+        expect(UI.getOptions(ui, 'options', 'a.b')).toBe(2);
+        UI.setOptions(ui, 'options', 'a.b.c', 3);
+        expect(UI.getOptions(ui, 'options', 'a.b.c')).toBe(3);
     });
 });

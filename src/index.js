@@ -32,43 +32,32 @@ UI.zIndex = function () {
     return zIndex++;
 };
 
-/**
- * @function getOption
- * @param val
- */
 
 /**
  * 生成一个 get options 方法
  * @param ui
  * @param optionsName
- * @returns {getOption}
+ * @param key
+ * @returns {*}
  */
-UI.buildGetOption = function (ui, optionsName) {
-    return function getOption(key) {
-        if (!key) {
-            return ui[optionsName];
-        }
+UI.getOptions = function (ui, optionsName, key) {
+    if (!key) {
+        return ui[optionsName];
+    }
 
-        return object.get(ui[optionsName], key);
-    };
+    return object.get(ui[optionsName], key);
 };
 
+
 /**
- * @function setOption
+ * set options 方法
+ * @param ui
+ * @param optionsName
  * @param key
  * @param val
  */
-
-/**
- * 生成一个 set options 方法
- * @param ui
- * @param optionsName
- * @returns {setOption}
- */
-UI.buildSetOption = function (ui, optionsName) {
-    return function setOption(key, val) {
-        object.set(ui[optionsName], key, val);
-    };
+UI.setOptions = function (ui, optionsName, key, val) {
+    object.set(ui[optionsName], key, val);
 };
 
 UI.BUTTON_CLASS = 'blearbtn';
