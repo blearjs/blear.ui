@@ -21,9 +21,10 @@
   overflow: hidden;
   text-overflow: ellipsis;
   font-family: inherit;
-  cursor: pointer; }
+  cursor: pointer;
+  outline: 0; }
   .blearbtn:active {
-    background: #f7f7f7; }
+    outline: 0; }
   .blearbtn_default {
     color: #888; }
     .blearbtn_default:hover, .blearbtn_default:active {

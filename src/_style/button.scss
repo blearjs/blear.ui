@@ -26,9 +26,10 @@
   text-overflow: ellipsis;
   font-family: inherit;
   cursor: pointer;
+  outline: 0;
 
   &:active {
-    background: #f7f7f7;
+    outline: 0;
   }
 
   &_default {
