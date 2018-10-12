@@ -1,15 +1,5 @@
-$button-default-border: #ccc;
-$button-default-bg: #fff;
-$button-default-color: #888;
-$button-primary-border: #007aff;
-$button-primary-bg: #007aff;
-$button-primary-color: #007aff;
-$button-success-border: #4cd964;
-$button-success-bg: #4cd964;
-$button-success-color: #4cd964;
-$button-danger-border: #ff3b30;
-$button-danger-bg: #ff3b30;
-$button-danger-color: #ff3b30;
+
+@import "./variable";
 
 .blearbtn {
   border: 0;
@@ -42,27 +32,38 @@ $button-danger-color: #ff3b30;
   }
 
   &_default {
-    border-color: $button-default-border;
-    background: $button-default-bg;
     color: $button-default-color;
+
+    &:hover,
+    &:active {
+      background: lighten($button-default-color, 40%);
+    }
   }
 
   &_primary {
-    //border-color: $button-primary-border;
-    //background: $button-primary-bg;
-    //color: $button-primary-color;
     color: $button-primary-color;
+
+    &:hover,
+    &:active {
+      background: lighten($button-primary-color, 40%);
+    }
   }
 
   &_success {
-    border-color: $button-success-border;
-    background: $button-success-bg;
     color: $button-success-color;
+
+    &:hover,
+    &:active {
+      background: lighten($button-success-color, 52%);
+    }
   }
 
   &_danger {
-    border-color: $button-danger-border;
-    background: $button-danger-bg;
     color: $button-danger-color;
+
+    &:hover,
+    &:active {
+      background: lighten($button-danger-color, 42%);
+    }
   }
 }

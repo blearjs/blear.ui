@@ -25,16 +25,18 @@
   .blearbtn:active {
     background: #f7f7f7; }
   .blearbtn_default {
-    border-color: #ccc;
-    background: #fff;
     color: #888; }
+    .blearbtn_default:hover, .blearbtn_default:active {
+      background: #eeeeee; }
   .blearbtn_primary {
-    color: #007aff; }
+    color: #1890ff; }
+    .blearbtn_primary:hover, .blearbtn_primary:active {
+      background: #e4f2ff; }
   .blearbtn_success {
-    border-color: #4cd964;
-    background: #4cd964;
-    color: #4cd964; }
+    color: #22bf5e; }
+    .blearbtn_success:hover, .blearbtn_success:active {
+      background: #eefcf3; }
   .blearbtn_danger {
-    border-color: #ff3b30;
-    background: #ff3b30;
-    color: #ff3b30; }
+    color: #f5222d; }
+    .blearbtn_danger:hover, .blearbtn_danger:active {
+      background: #feeff0; }

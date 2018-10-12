@@ -8,4 +8,5 @@
   background-color: transparent;
   font-size: 14px; }
   .bleaript:focus {
-    border-color: #03A9F4; }
+    border-color: #1890ff;
+    outline: 0; }
